@@ -1,0 +1,187 @@
+body {
+    background-color: #bcbcb8;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.img{
+    width: 500px;
+    height: 500px;
+    margin: 50px 50px 0 50px ;
+}
+.grid-container {
+    background-color: #d8d7d0;
+    box-shadow: 1px -1px 170px 23px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 1px -1px 170px 23px rgba(0,0,0,0.52);
+    -moz-box-shadow: 1px -1px 170px 23px rgba(0,0,0,0.52);
+    border-radius: 34px 34px 34px 34px;
+    -webkit-border-radius: 34px 34px 34px 34px;
+    -moz-border-radius: 34px 34px 34px 34px;
+    width: 600px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.7fr 0.2fr 1.6fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img-anime"
+      "name-date"
+      "info-anime";
+  }
+  .img-anime { 
+      grid-area: img-anime;
+ }
+  .name-date { 
+    grid-area: name-date;
+  }
+  .name-date h1{
+    font-family: "Coast Black";
+    text-transform: uppercase;
+    margin: -5px 50px 0 50px;
+    font-size: 40px;
+  }
+.japanese-year h5 {
+  font-family: "Coast Black";
+  margin: 0 0 0 50px;
+  font-size: 20px;
+}
+.japanese-year p{
+  font-family: 'Padauk', sans-serif;
+  margin: 0 0 0 50px;
+  font-size: 30px;
+}
+.japanese-year{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+}
+.info-anime { grid-area: info-anime; }
+
+
+.anime-base {
+  margin: -30px 0 0 50px ;
+  font-family: 'Big Shoulders Display', cursive;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr 2.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "episodes"
+    "rated"
+    "score"
+    "synopsis";
+}
+.episodes { 
+  grid-area: episodes;
+ }
+.episodes h4{
+  font-size: 30px;
+}
+.rated { grid-area: rated; }
+.rated h4{
+  font-size: 30px;
+  margin-top: -30px;
+}
+.score { grid-area: score; }
+.synopsis { 
+  margin-top: -30px;
+  grid-area: synopsis;
+  margin-right: 50px;
+
+ }
+ .synopsis p{
+   font-size: 30px;
+ }
+ .score h4{
+  font-size: 30px;
+  margin-top: -30px;
+}
+@media screen and (max-width: 620px ) {
+  .grid-container {
+    width: 400px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.7fr 0.2fr 1.6fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img-anime"
+      "name-date"
+      "info-anime";
+  }
+  .img{
+    width: 300px;
+    height: 300px;
+    margin: 50px 50px 0 50px ;
+  }
+  .japanese-year p{
+    font-size: 10px;
+  }
+  .name-date h1{
+    font-size: 20px;
+}
+.synopsis p{
+  font-size: 20px;
+}
+.score h4{
+ font-size: 15px;
+ margin-top: 10px;
+
+}
+.episodes h4{
+  font-size: 15px;
+  margin-top: 35px;
+}
+.rated h4{
+  font-size: 15px;
+  margin-top:  10px;
+}
+}
+
+@media screen and (max-width: 375px ) {
+  .grid-container {
+    width: 300px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.7fr 0.2fr 1.6fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img-anime"
+      "name-date"
+      "info-anime";
+  }
+  .img{
+    width: 200px;
+    height: 200px;
+    margin: 50px 50px 0 50px ;
+  }
+  .japanese-year p{
+    font-size: 10px;
+  }
+  .name-date h1{
+    font-size: 20px;
+}
+.synopsis p{
+  font-size: 15px;
+}
+.score h4{
+ font-size: 15px;
+ margin-top: -10px;
+
+}
+.episodes h4{
+  font-size: 15px;
+  margin-top: 33px;
+}
+.rated h4{
+  font-size: 15px;
+  margin-top:  -10px;
+}
+}
